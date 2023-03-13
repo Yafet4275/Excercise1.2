@@ -1,14 +1,5 @@
-// let myName = 'Bob';
-// document.write(myName);
-// myName = 'John Doe';
-// document.write(myName);
-// alert(myName);
+let pokemonList=[{Name:: "Bulbasaur", Weight: "6.9kg", Type: [{'grass'}, {'poisson'}]},
+{Name: "Ivysaur", Weight: "13kg", Type: [{'grass'}, {'poison'}]},
+{Name: "Charmander", Weight: "8.5kg", Type: {'fire'}}
+]
 
-// let size = 100;
-// let doubleSize = size * 2;
-// document.write(doubleSize);
-
-let size = 100;
-let doubleSize = size * 2;
-let minSize = (doubleSize * 2) - (size / 2);
-document.write(minSize);
