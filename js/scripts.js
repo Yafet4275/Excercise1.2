@@ -1,16 +1,13 @@
 
-var pokemonList = [{Name: "Bulbasaur", Weight: "6.9kg", Type: ['grass', 'poisson']},
-    {Name: "Ivysaur", Weight: "13kg", Type: ['grass', 'poison']},
-    {Name: "Charmander", Weight: "8.5kg", Type: 'fire'},
+var pokemonList = [{name: "Bulbasaur", weight: "6.9kg", types: ['grass', 'poisson']},
+    {name: "Ivysaur", weight: "13kg", types: ['grass', 'poison']},
+    {name: "Charmander", weight: "8.5kg", types: 'fire'},
 ];
-
-    
-alert("Do you want to see the list pokemon?")
 
 document.write("<ul>");
 
 for (var i=0; i<pokemonList.length; i++) {
-    document.write(`<li>${pokemonList[i].Name} - Weight: ${pokemonList[i].Weight} - Type: ${pokemonList[i].Type.join(", ")}</li>`);
+    document.write(`<li>${pokemonList[i].name} - weight: ${pokemonList[i].weight} - types: ${pokemonList[i].types.join(", ")}</li>`);
 }
   
 document.write("</ul>");
