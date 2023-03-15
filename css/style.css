@@ -1,0 +1,9 @@
+html, 
+body {
+  font-family: Arial, sans-serif;
+}
+
+#modal-container {
+    display: none;
+}
+
