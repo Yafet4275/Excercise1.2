@@ -13,7 +13,7 @@ let repository = [
     {name: "Charmander",
     height: 1,
     weight: "8.5kg",
-    types: 'fire'},
+    types: ['fire']},
 ];
 
 document.write("<ul>");
@@ -31,3 +31,6 @@ for (var i=0; i<repository.length; i++) {
   
 document.write("</ul>");
   
+// function printArrayDetails(){
+//     for (let i= 0; i < pokemonL)
+// }
