@@ -1,5 +1,5 @@
-var pokemonRepository = (function () {
-  var pokemonList = [
+let pokemonRepository = (function () {
+  let pokemonList = [
     {name: 'Bulbasaur', type: ['grass', 'poison'], height: 0.7},
     {name: 'Charmander', type: ['fire'], height: 0.6},
     {name: 'Squirtle', type: ['water'], height: 0.5}
@@ -20,7 +20,7 @@ var pokemonRepository = (function () {
       }
     },
     findByName: function(name) {
-      var filteredList = pokemonList.filter(function(pokemon) {
+      let filteredList = pokemonList.filter(function(pokemon) {
         return pokemon.name.toLowerCase() === name.toLowerCase();
       });
       return filteredList.length ? filteredList[0] : null;
@@ -31,9 +31,9 @@ var pokemonRepository = (function () {
 pokemonRepository.add({name: 'NewPokemon', type: ['newFeature'], height: 0.3});
 pokemonRepository.add('Invalid data');
 
-var pokemonListElement = document.getElementById('pokemonList');
+let pokemonListElement = document.getElementById('pokemonList');
       pokemonRepository.getAll().forEach(function(pokemon) {
-        var listItem = document.createElement('li');
+        let listItem = document.createElement('li');
         listItem.innerHTML = '<h2>' + pokemon.name + '</h2><p>Type: ' + pokemon.type.join(', ') + '</p><p>Height: ' + pokemon.height + '</p>';
         pokemonListElement.appendChild(listItem);
       });
