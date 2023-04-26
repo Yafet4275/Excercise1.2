@@ -1,26 +1,69 @@
-html, 
-body {
-  font-family: Arial, sans-serif;
+div > p {
+  color: green;
 }
 
-#modal-container {
-    display: none;
-}
-
-ul {
-  list-style-type: none;
+.pokemon-list {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-li {
-  background-color: #f2f2f2;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+.pokemon-list li {
+  margin-bottom: 10px;
 }
-h1 {
-  font-size: 24px;
+
+.pokemon-button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: bold;
-  text-align: center;
+  padding: 10px 20px;
+  /* display: inline-block; */
+  /* -webkit-transition-duration: 0.4s; Safari */
+  /* transition-duration: 0.4s; */
+}
+
+.pokemon-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+.pokemon-button:hover {
+  background-color: #f7b500;
+}
+
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+input[type='radio']:checked {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.button-class {
+  background-color: #39f10a;
+}
+
+.button--red {
+  background-color: red;
+}
+
+.extra_content, .show_less, .show_more {
+display: none;
+}
+
+.visible{
+display: block;
 }
